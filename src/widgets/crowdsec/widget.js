@@ -1,8 +1,9 @@
-import credentialedProxyHandler from "utils/proxy/handlers/credentialed";
+import crowdsecProxyHandler from "./proxy";
 
 const widget = {
   api: "{url}/v1/{endpoint}",
-  proxyHandler: credentialedProxyHandler,
+  loginURL: "{url}/v1/watchers/login",
+  proxyHandler: crowdsecProxyHandler,
 
   mappings: {
     bans: {

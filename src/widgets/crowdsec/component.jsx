@@ -27,8 +27,6 @@ export default function Component({ service }) {
     );
   }
 
-  console.log(bansData);
-
   return (
     <Container service={service}>
       <Block label="crowdsec.bans" value={t("common.number", { value: bansData?.length ?? 0 })} />
